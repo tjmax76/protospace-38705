@@ -42,7 +42,7 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   group :production do
   gem 'pg'
-end
+  end
 end
 
 group :test do
