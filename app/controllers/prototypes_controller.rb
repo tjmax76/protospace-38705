@@ -29,7 +29,7 @@ class PrototypesController < ApplicationController
 
   def update
     if @prototype.update(permitted_parameters)
-      move_top_page
+      redirect_to prototype_path(permitted_parameters)
     else
       render action: :edit
     end
